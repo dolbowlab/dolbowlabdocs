@@ -7,13 +7,12 @@ print_title: Jekyll theme for documentation — mydoc product
 print_subtitle: version 6.0
 output: pdf
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "page_print"
-      comments: true
+      comments: false
       search: true
 
 pdf_sidebar: mydoc_sidebar

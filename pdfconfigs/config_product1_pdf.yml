@@ -7,13 +7,12 @@ print_title: Product 1 documentation
 print_subtitle: version 1.0
 output: pdf
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "page_print"
-      comments: true
+      comments: false
       search: true
 
 pdf_sidebar: product1_sidebar
