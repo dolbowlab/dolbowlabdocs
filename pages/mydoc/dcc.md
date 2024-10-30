@@ -1,6 +1,6 @@
 ---
 title: DCC
 sidebar: mydoc_sidebar
-permalink: mydoc_introduction.html
+permalink: dcc.html
 folder: mydoc
 ---

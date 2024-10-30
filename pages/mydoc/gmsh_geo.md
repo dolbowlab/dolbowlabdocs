@@ -1,7 +1,7 @@
 ---
 title: GEO
 sidebar: mydoc_sidebar
-permalink: mydoc_introduction.html
+permalink: gmsh_geo.html
 folder: mydoc
 ---
 

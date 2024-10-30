@@ -1,6 +1,6 @@
 ---
 title: Tooltips
 sidebar: mydoc_sidebar
-permalink: mydoc_introduction.html
+permalink: raccoon.html
 folder: mydoc
 ---
