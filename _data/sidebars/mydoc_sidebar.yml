@@ -30,15 +30,19 @@ entries:
         output: web, pdf
 
         folderitems:
-          - title: Installing
-            url: /raccoon.html
+          - title: Resources
+            url: /resources.html
+            output: web, pdf
+
+          - title: Git
+            url: /git.html
             output: web, pdf
 
       - title: DCC
         output: web, pdf
 
         folderitems:
-          - title: dcc
-            url: /dcc.html
+          - title: Installing
+            url: /installing.html
             output: web, pdf
 # Copyright 2021 Google LLC
