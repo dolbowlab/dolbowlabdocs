@@ -27,11 +27,11 @@ A file system overview can be [found here](https://oit-rc.pages.oit.duke.edu/rcs
 
 Your home directory has limited storage. There is more storage in the labs folder, `/hpc/group/dolbowlab/`. Make a directory there with the name of you DukeID. Use this for storage.
 
-Additionally, make a folder in the `/work/` directory with the same name.
+Additionally, make a folder in the `/work/` directory with the same name. This is a high speed file system with limited storage. When running simulations, write your outputs here, and then transfer them to the lab directory. The `/work/` file system is purged every 75 days.
 
 ### The dolbowlab Partition
 
-Our lab owns a node on the DCC that is only accessible by lab members. It only has 78 cores so it can easily get clogged up if multiple lab members are using it. The reset of the DCC is still accessible the lab node is full.
+Our lab owns a node on the DCC that is only accessible by lab members. It only has 78 cores so it can easily get clogged up if multiple lab members are using it. The reset of the DCC is still accessible if the lab node is full.
 
 ### Installing RACCOON on the DCC
 
