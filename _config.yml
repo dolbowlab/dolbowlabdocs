@@ -37,8 +37,7 @@ feedback_subject_line: Dolbow lab Docs
 
 feedback_email: david.torres@duke.edu
 # used as a contact email for the Feedback link in the top navigation bar
-
-# feedback_disable: true
+feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"
