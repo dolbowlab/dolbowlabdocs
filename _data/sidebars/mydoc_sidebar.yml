@@ -53,4 +53,12 @@ entries:
           - title: Installing
             url: /installing.html
             output: web, pdf
+
+      - title: Paraview
+        output: web, pdf
+
+        folderitems:
+          - title: remote
+            url: /remote.html
+            output: web, pdf
 # Copyright 2021 Google LLC
