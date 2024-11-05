@@ -7,5 +7,86 @@ permalink: index.html
 summary: An overview
 ---
 
+When modifying these docs, its useful to run the website locally.
 
-## Build the Theme
+## Installation instructions
+
+You will need to install Jekyll.
+
+### Mac instructions
+
+If you do not have Rubygems installed, you will need to do that first.
+Using brew ([see install instructions here](https://brew.sh/)) run,
+
+```bash
+brew install ruby
+```
+
+You may need to update your path once installed. The instructions for this should pop up at the end of the installation. For example,
+
+```bash
+Removing: /Users/torres/Library/Logs/Homebrew/unbound... (64B)
+Pruned 0 symbolic links and 10 directories from /opt/homebrew
+==> Caveats
+==> ruby
+By default, binaries installed by gem will be placed into:
+ /opt/homebrew/lib/ruby/gems/3.3.0/bin
+You may want to add this to your PATH.
+ruby is keg-only, which means it was not symlinked into /opt/homebrew,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+If you need to have ruby first in your PATH, run:
+ echo ‘export PATH=“/opt/homebrew/opt/ruby/bin:$PATH”’ >> ~/.zshrc
+```
+
+Once you follow these instructions, open a new terminal window. Run `which ruby` and that should return the path variable you just set.
+
+Now install the bundler
+
+```bash
+gem install bundler
+```
+
+Clone the repository
+
+```bash
+git clone git@github.com:dolbowlab/dolbowlabdocs.git
+```
+
+Navigate into the repository and run,
+
+```bash
+bundle install
+```
+
+Finally, to start the local server run,
+
+```bash
+bundle exec jekyll serve
+```
+
+Which should now show
+
+```bash
+$ bundle exec jekyll serve
+Configuration file: /Users/torres/Projects/dolbowlabdocs/_config.yml
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+            Source: /Users/torres/Projects/dolbowlabdocs
+       Destination: /Users/torres/Projects/dolbowlabdocs/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+   GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
+                    done in 1.072 seconds.
+ Auto-regeneration: enabled for ‘/Users/torres/Projects/dolbowlabdocs’
+    Server address: http://127.0.0.1:4000
+```
+
+Navigate to the server address to view the local build of the website.
+
+### Linux Instructions
+
+### Windows Instructions
+
+## Modifying the Docs
+
+For things you only need to modify the files found in the `pages` folder. The pages folder has a series of markdown folders that consist of the content of the website. `mydoc_sidebar.yml` shows how all of these folders are related to each other.
