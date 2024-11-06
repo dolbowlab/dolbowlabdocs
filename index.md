@@ -85,6 +85,56 @@ Navigate to the server address to view the local build of the website.
 
 ### Linux Instructions
 
+It's easiest to go through the [ruby version manager](https://rvm.io/). Follow the instructions found on their website to install ruby. Follow the command for installing GPG keys and then to install RVM (ignore the option that installs Rails). You may have to install gpg2 first. To do so just do,
+
+```bash
+sudo apt-get install gnupg2 -y
+```
+
+Once rvm is installed either open a new terminal window or source your current one
+
+```bash
+source ~/.rvm/scripts/rvm 
+```
+
+Then install Ruby
+
+```bash
+rvm install 3.1.2 --autolibs=3
+```
+
+Autolibs should install all missing dependencies. 
+
+Now install Jekyll and Bundler
+
+```bash
+gem install jekyll
+gem install bundler
+```
+
+Clone the dolbowlab labs doc repository
+
+```bash
+git clone git@github.com:dolbowlab/dolbowlabdocs.git
+```
+
+Navigate to the repository and use Bundler to update any missing dependencies
+
+```bash
+bundle install
+```
+
+Finally, launch the local server
+
+```bash
+jekyll serve
+```
+
+
+
+
+
+
 ### Windows Instructions
 
 ## Modifying the Docs
