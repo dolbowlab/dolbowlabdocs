@@ -33,8 +33,11 @@ xx.xxx.xx.xxxx
 Now from any client that has `ssh` installed, just connect to your IP
 
 ```bash
-ssh xx.xxx.xx.xxxx
+ssh username@xx.xxx.xx.xxxx
 ```
+
+Replace `username` with the username on your workstation.
+
 
 ### Setting up an SSH Key (Optional)
 
