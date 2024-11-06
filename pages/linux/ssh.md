@@ -44,4 +44,4 @@ Add an ssh key to bypass the password prompt when connecting to your workstation
 
 Once generated, go back to your workstation and navigate to `~/.ssh`(if this folder does not exist create it).
 
-Edit your `authorized_keys` folder (again create it if it does not exist) and add the public key you just created to your authorized keys.
+Edit your `authorized_keys` file (again create it if it does not exist) and add the public key you just created to your authorized keys. It should be one line per public key. 
