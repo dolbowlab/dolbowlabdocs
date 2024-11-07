@@ -137,6 +137,56 @@ jekyll serve
 
 ### Windows Instructions
 
+Why are you using Windows?
+
 ## Modifying the Docs
 
 For things you only need to modify the files found in the `pages` folder. The pages folder has a series of markdown folders that consist of the content of the website. `mydoc_sidebar.yml` shows how all of these folders are related to each other.
+
+For example, this code block,
+```yml
+      - title: GMSH
+        output: web, pdf
+
+        folderitems:
+          - title: GEO
+            url: /gmsh_geo.html
+            output: web, pdf
+
+          - title: Python
+            url: /gmsh_python.html
+            output: web, pdf
+```
+
+produces the structure: 
+
+![structure](images/index/structure.png)
+
+`gmsh_geo.html` and `gmsh_python.html` refer to `pages/gmsh/gmsh_geo.md` and `pages/gmsh/python.md` respectively (Yes the file extensions are correct).
+
+### Page Structure
+
+All pages start with the following block,
+
+```md
+---
+title: Remote Connection
+tags: [remote]
+sidebar: mydoc_sidebar
+permalink: remote.html
+summary: "Set up a tunnel with paraview"
+folder: linux
+---
+
+```
+
+The entries are as follows
+
+- **Title** Title of the page
+- **Tags** Tags associated with page, this helps with searching
+- **sidebar** The side bar associated with this page. We have one sidebar `mydoc_sidebar`
+- **permalink** The name of the html file this will generate. Keep this the same as the name of the page(minus the markdown extension)
+- **summary** Summary of the contents of the page
+- **folder** Folder name where the page is stored
+
+Below the header is where the body of the page goes. This is all done in markdown. A much more detailed description of this can be found [here](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html).
