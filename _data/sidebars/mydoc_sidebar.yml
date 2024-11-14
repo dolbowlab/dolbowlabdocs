@@ -46,6 +46,10 @@ entries:
             url: /git.html
             output: web, pdf
 
+          - title: Common Issues
+            url: /common_issues.html
+            output: web, pdf
+
       - title: DCC
         output: web, pdf
 
