@@ -190,3 +190,13 @@ The entries are as follows
 - **folder** Folder name where the page is stored
 
 Below the header is where the body of the page goes. This is all done in markdown. A much more detailed description of this can be found [here](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html).
+
+## Contributing
+
+The main branch of the repository is protected, meaning that you will need to make a branch with your changes and merge it in. 
+
+As long as you are a part of the `dolbowlab` group on github you will be able to merge in your own pull requests. This buffer exists to allow to you look at your changes one last time before merging them into master. Mainly **Make sure the commits being merged in are the ones you created**. If you created two commits that you want to merge, then the PR should only show two commits being merged. 
+
+**There are no tests on the repository so make sure everything works locally before merging.** 
+
+It is recommened to create a branch on the repository call something like `<yourname>draft`(eg `daviddraft`). Just use this as a buffer for your changes and don't delete the branch when merging. 
